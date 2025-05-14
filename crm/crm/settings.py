@@ -75,8 +75,13 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', # sqlite3
+        'NAME': 'crmdb', # BASE_DIR / 'db.sqlite3', 
+        'USER': 'rezu',
+        'PASSWORD': 'rezuan00',
+        'HOST': 'localhost',
+        'PORT': '3306',
+
     }
 }
 
